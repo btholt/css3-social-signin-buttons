@@ -2,6 +2,15 @@
 
 by [Nicolas Gallagher](http://nicolasgallagher.com)
 
+bastardization by [Brian Holt](http://brianholt.me)
+
+## Changes by Brian
+
+* Took out Github, Google, OpenID, Winodws, and Y!
+* Took out large format buttons
+* Took all the fluff out of index.html
+* Added LinkedIn
+
 ## Standard buttons
 
 To create the default sign-in button, add a class of `btn-auth` and `btn-[service]` (where `[service]` is one of the supported social sign-in services) to any appropriate element (most likely an anchor).

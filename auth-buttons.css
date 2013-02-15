@@ -1,17 +1,8 @@
-/*
- * Button Object
- */
-
-/*
- * 1. Corrects inability to style clickable 'input' types in iOS
- * 2. Remove excess padding in IE6/7
- * 3. IE6/7 inline-block hack for native block-level elements
- */
-
 .btn-auth {
     position: relative;
     display: inline-block;
     height: 22px;
+    width: 185px;
     padding: 0 1em;
     border: 1px solid #999;
     border-radius: 2px;
@@ -29,10 +20,6 @@
     box-sizing: content-box;
     /* iOS */
     -webkit-appearance: none; /* 1 */
-    /* IE6/7 hacks */
-    *overflow: visible;  /* 2 */
-    *display: inline; /* 3 */
-    *zoom: 1; /* 3 */
 }
 
 .btn-auth:hover,
@@ -47,22 +34,7 @@
     float: left;
     width: 22px;
     height: 22px;
-    background: url(auth-icons.png) no-repeat 99px 99px;
-}
-
-/*
- * 36px
- */
-
-.btn-auth.large {
-    height: 36px;
-    line-height: 36px;
-    font-size: 20px;
-}
-
-.btn-auth.large:before {
-    width: 36px;
-    height: 36px;
+    background: url(social-sprites.png) no-repeat 99px 99px;
 }
 
 /*
@@ -75,7 +47,7 @@
 }
 
 
-/* Facebook (extends .btn-auth)
+/* Facebook
    ========================================================================== */
 
 .btn-facebook {
@@ -112,111 +84,41 @@
 
 .btn-facebook:before {
     border-right: 1px solid #465f94;
-    margin: 0 1em 0 -1em;
-    background-position: 0 0;
+    margin: 0.2em 1em 0 -1em;
+    background-position: 0 0; 
+    width: 22px; 
+    height: 19px
 }
 
-.btn-facebook.large:before {
-    background-position: 0 -22px;
-}
-
-
-/* GitHub
+/* LinkedIn
    ========================================================================== */
 
-.btn-github {
-    border-color: #d4d4d4;
-    background: #ececec;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
-    background-image: -webkit-linear-gradient(#f4f4f4, #ececec);
-    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
-    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
-    background-image: -o-linear-gradient(#f4f4f4, #ececec);
-    background-image: linear-gradient(#f4f4f4, #ececec);
-}
-
-.btn-github:hover,
-.btn-github:focus {
-    border-color: #518cc6;
-    border-bottom-color: #2a65a0;
-    color: #fff;
-    background-color: #599bdc;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#599bdc), to(#3072b3));
-    background-image: -webkit-linear-gradient(#599bdc, #3072b3);
-    background-image: -moz-linear-gradient(#599bdc, #3072b3);
-    background-image: -ms-linear-gradient(#599bdc, #3072b3);
-    background-image: -o-linear-gradient(#599bdc, #3072b3);
-    background-image: linear-gradient(#599bdc, #3072b3);
-}
-
-.btn-github:active {
-    border-color: #2A65A0;
-    border-bottom-color: #518CC6;
-    color: #fff;
-    background: #3072B3;
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#3072b3), to(#599bdc));
-    background: -webkit-linear-gradient(#3072b3, #599bdc);
-    background: -moz-linear-gradient(#3072b3, #599bdc);
-    background: -ms-linear-gradient(#3072b3, #599bdc);
-    background: -o-linear-gradient(#3072b3, #599bdc);
-    background: linear-gradient(#3072b3, #599bdc);
-}
-
-/*
- * Icon
- */
-
-.btn-github:before {
-    margin: 0 0.6em 0 -0.6em;
-    background-position: -44px 0;
-}
-
-.btn-github:hover:before,
-.btn-github:focus:before,
-.btn-github:active:before {
-    background-position: -66px 0;
-}
-
-.btn-github.large:before {
-    background-position: -72px -22px;
-}
-
-.btn-github.large:hover:before,
-.btn-github.large:focus:before,
-.btn-github.large:active:before {
-    background-position: -108px -22px;
-}
-
-
-/* Google
-   ========================================================================== */
-
-.btn-google {
+.btn-linkedin {
     border-color: #3079ed;
     color: #fff;
-    background: #4787ed;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#4787ed));
-    background-image: -webkit-linear-gradient(#4d90fe, #4787ed);
-    background-image: -moz-linear-gradient(#4d90fe, #4787ed);
-    background-image: -ms-linear-gradient(#4d90fe, #4787ed);
-    background-image: -o-linear-gradient(#4d90fe, #4787ed);
-    background-image: linear-gradient(#4d90fe, #4787ed);
+    background-color: #0E295A;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EBEDEF), to(#0E295A));
+    background-image: -webkit-linear-gradient(#6EB2D8, #0E295A);
+    background-image: -moz-linear-gradient(#6EB2D8, #0E295A);
+    background-image: -ms-linear-gradient(#6EB2D8, #0E295A);
+    background-image: -o-linear-gradient(#6EB2D8, #0E295A);
+    background-image: linear-gradient(#6EB2D8, #0E295A);
 }
 
-.btn-google:hover,
-.btn-google:focus,
-.btn-google:active {
+.btn-linkedin:hover,
+.btn-linkedin:focus,
+.btn-linkedin:active {
     color: #fff;
-    background-color: #357ae8;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4d90fe), to(#357ae8));
-    background-image: -webkit-linear-gradient(#4d90fe, #357ae8);
-    background-image: -moz-linear-gradient(#4d90fe, #357ae8);
-    background-image: -ms-linear-gradient(#4d90fe, #357ae8);
-    background-image: -o-linear-gradient(#4d90fe, #357ae8);
-    background-image: linear-gradient(#4d90fe, #357ae8);
+    background-color: #0E295A;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#EBEDEF), to(#0E295A));
+    background-image: -webkit-linear-gradient(#6EB2D8, #0E295A);
+    background-image: -moz-linear-gradient(#6EB2D8, #0E295A);
+    background-image: -ms-linear-gradient(#6EB2D8, #0E295A);
+    background-image: -o-linear-gradient(#6EB2D8, #0E295A);
+    background-image: linear-gradient(#6EB2D8, #0E295A);
 }
 
-.btn-google:active {
+.btn-linkedin:active {
     -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
 }
@@ -225,43 +127,12 @@
  * Icon
  */
 
-.btn-google:before {
-    margin: 0 1em 0 -1em;
-    background-position: -88px 0;
-    background-color: #e6e6e6;
+.btn-linkedin:before {
+    margin: 0.2em 1em 0 -0.7em;
+    background-position: -32px 0; 
+    width: 16px; 
+    height: 16px;
 }
-
-.btn-google.large:before {
-    background-position: -144px -22px;
-}
-
-
-/* Open ID
-   ========================================================================== */
-
-.btn-openid:hover,
-.btn-openid:focus {
-    border-color: #777;
-    background: #fcfcfc;
-}
-
-.btn-openid:active {
-    background: #f5f5f5;
-}
-
-/*
- * Icon
- */
-
-.btn-openid:before {
-    margin: 0 0.6em 0 -0.6em;
-    background-position: -154px 0;
-}
-
-.btn-openid.large:before {
-    background-position: -252px -22px;
-}
-
 
 /* Twitter
    ========================================================================== */
@@ -300,77 +171,8 @@
  */
 
 .btn-twitter:before {
-    margin: 0 0.6em 0 -0.6em;
-    background-position: -22px 0;
-}
-
-.btn-twitter.large:before {
-    background-position: -36px -22px;
-}
-
-
-/* Windows Live ID
-   ========================================================================== */
-
-.btn-windows:hover,
-.btn-windows:focus {
-    border-color: #777;
-    background: #fcfcfc;
-}
-
-.btn-windows:active {
-    background: #f5f5f5;
-}
-
-/*
- * Icon
- */
-
-.btn-windows:before {
-    margin: 0 0.6em 0 -0.6em;
-    background-position: -110px 0;
-}
-
-.btn-windows.large:before {
-    background-position: -180px -22px;
-}
-
-
-/* Yahoo!
-   ========================================================================== */
-
-.btn-yahoo {
-    border-color: #ffb305;
-    background: #ffc426;
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,0.5)), to(rgba(255,255,255,0)));
-    background-image: -webkit-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0));
-    background-image: -moz-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0));
-    background-image: -ms-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0));
-    background-image: -o-linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0));
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0));
-}
-
-.btn-yahoo:hover,
-.btn-yahoo:focus {
-    background-color: #fabf20;
-}
-
-.btn-yahoo:active {
-    border-color: #f09700;
-    background-image: none;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,0.3);
-}
-
-/*
- * Icon
- */
-
-.btn-yahoo:before {
-    margin: 0 0.6em 0 -0.6em;
-    background-position: -132px 0;
-}
-
-.btn-yahoo.large:before {
-    background-position: -216px -22px;
+    margin: 0.3em 0.6em 0 -0.6em;
+    background-position: -58px 0;
+    width: 16px; 
+    height: 13px;
 }
